@@ -3,7 +3,7 @@ import { TfiEmail } from 'react-icons/tfi';
 
 const Page = () => {
     return (
-        <div className="w-full h-full flex flex-col justify-between p-6">
+        <div className="w-full h-full flex flex-col justify-between  md:p-6">
             {/* About Me */}
             <section>
                 <h1 className="text-3xl underline font-medium text-[#9A9A9A]">Muhammad Ali</h1>
@@ -13,8 +13,8 @@ const Page = () => {
             </section>
 
             {/* Reach Out */}
-            <section className="mt-32 flex flex-col items-center">
-                <h2 className="text-3xl  font-semibold text-gray-500">
+            <section className="md:mt-32 sm:mt-2 flex flex-col items-center">
+                <h2 className="text-3xl text-center  font-semibold text-gray-500">
                     Share your idea, and I will build it for you.
                 </h2>
                 <div className="border-2 p-4 rounded-full border-[#9A9A9A] mt-4">

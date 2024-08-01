@@ -7,7 +7,7 @@ const page = () => {
     return (
         <div className='w-full h-full'>
         {/* Tech stack */}
-        <div className="flex flex-wrap gap-4 h-[8vh] my-10 justify-center">
+        <div className="flex flex-wrap gap-4 my-12 justify-center">
             {Stack.map((icon) => (
                 <div key={icon.key} className="p-2">
                     {icon}
@@ -17,7 +17,7 @@ const page = () => {
             {/* Mobile apps */}
             <div>
                 <h1 className='text-xl text-[#9A9A9A] capitalize font-bold my-2'>web solutions</h1>
-                <div className='grid grid-cols-3 gap-4 my-4'>
+                <div className='grid md:grid-cols-3 grid-cols-1  gap-4 my-4'>
                     {WebProjects.map((item) =>< Project key = {
                         item.id
                     }
@@ -31,7 +31,7 @@ const page = () => {
             {/* Mobile apps */}
             <div>
                 <h1 className='text-xl text-[#9A9A9A] font-bold capitalize my-2'>mobile solutions</h1>
-                <div className='grid grid-cols-3 gap-4 my-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-4 my-4'>
                     {MobileProjects.map((item) =>< Project key = {
                         item.id
                     }

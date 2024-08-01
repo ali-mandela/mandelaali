@@ -3,7 +3,7 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div className="w-full h-full p-4">
+        <div className="w-full h-full p-0 md:p-4">
             {/* Education */}
             <div className="mb-6">
                 <h2 className="text-xl text-[#9A9A9A] font-bold my-2">Education</h2>
