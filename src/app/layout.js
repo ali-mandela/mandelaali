@@ -2,7 +2,7 @@ import {Outfit} from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import {TfiEmail} from "react-icons/tfi";
-import NavLinkComponent from "@/components/NavLink";
+import NavLinkComponent, { MobileMenu } from "@/components/NavLink";
 import { RiMenu4Line } from "react-icons/ri";
 
 import {Socials} from "@/data/nav";
@@ -27,19 +27,7 @@ export default function RootLayout({children}) {
                         </div>
                         <div className='col-span-12 md:col-span-10 md:p-6 p-2 '>
                             {/* mOBILE */}
-                            <div className="md:hidden  flex justify-between">
-                                <div className=" hover:opacity-70">
-                                    <div className="border-2 p-4 rounded-full border-[#9A9A9A]">
-                                        <RiMenu4Line fontSize={28} color="#9A9A9A"/>
-                                    </div>
-                                </div>
-                                <div className=" hover:opacity-70">
-                                    <div className="border-2 p-4 rounded-full border-[#9A9A9A]">
-                                        <a href="mailto:muhammadali.nitrkl@gmail.com"><TfiEmail fontSize={28} color="#9A9A9A"/></a>
-                                    </div>
-                                </div>
-
-                            </div>
+                           <MobileMenu/>
                             {/* Follow Me */}
                             <div className="">
 
@@ -67,9 +55,9 @@ export default function RootLayout({children}) {
 
 export const SideBar = () => {
     return ( <> {/* MAILBOX */
-    } < div className = "items-center flex hover:opacity-70 flex-col" > <div className="border-2 p-4 rounded-full border-[#9A9A9A]">
+    } <div className = "items-center flex hover:opacity-70 flex-col" > <div className="border-2 p-4 rounded-full border-[#9A9A9A]">
         <a href="mailto:muhammadali.nitrkl@gmail.com"><TfiEmail fontSize={28} color="#9A9A9A"/></a>
     </div> <h1 className = "font-medium text-lg my-2 text-[#9A9A9A]" > Get in touch </h1>
               </div> {/* Navigation */
-    } < NavLinkComponent /> </>)
+    } <NavLinkComponent /> </>)
 }

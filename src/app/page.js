@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <div className="text-center flex flex-col items-center justify-center    ">
                 <p className="text-base text-[#9A9A9A] font-light">Hi, I am Muhammad Ali</p>
-                <h1 className="text-2xl w-3/4 text-center font-medium mt-2 text-[#9A9A9A] ">I am
+                <h1 className="text-2xl md:w-3/4 text-center font-medium mt-2 text-[#9A9A9A] ">I am
                     a full-stack developer with experience in building digital products and mobile
                     apps. I specialize in creating and shipping impactful solutions.</h1>
             </div>
